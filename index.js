@@ -11,6 +11,7 @@ const github = require('@actions/github');
 const tr = require('@actions/exec/lib/toolrunner');
 
 function hashString(content) {
+    console.log('This is a test')
     const sha256 = crypto.createHash('sha256');
     return sha256.update(content).digest('hex');
 }
